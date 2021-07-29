@@ -1,0 +1,245 @@
+{
+"_comment":"Sevicio de la configuracion empresarial",
+"empresa":{
+  "type_document_identification_id": 6,
+  "type_organization_id": 1,
+  "type_regime_id": 1,
+  "type_liability_id": 116,
+  "business_name": "EMPRESA DE PRUEBAS",
+  "merchant_registration": "1234567-12",
+  "municipality_id": 1006,
+  "address": "xxxxxxxxxxx",
+  "phone": 1234567,
+  "email": "test@test.test"
+ },
+"environment":{
+  "type_environment_id": 2
+},
+"software":{
+  "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+  "pin": 12345
+},
+"firma":{
+  "certificate": "base64",
+  "password": "123456"
+},
+"resolucion":{
+  "type_document_id": 1,
+  "prefix": "SETP",
+  "resolution": 987654321,
+  "resolution_date": "0001-01-01",
+  "technical_key": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "from": 987654321,
+  "to": 987654321,
+  "date_from": "2019-01-19",
+  "date_to": "2030-01-19"
+},
+"testfactura":{
+  "number":  987654321,
+  "type_document_id": 1,
+  "sync": true,
+  "send": true,
+  "customer": {
+    "type_document_identification_id": 3,
+    "identification_number": 987654321,
+    "name": "xxxxxxxxxxx",
+    "email": "correo@example.com",
+    "merchant_registration": "No tiene"
+  },
+  "legal_monetary_totals": {
+    "line_extension_amount": 125600.00,
+    "tax_exclusive_amount": 125600.00,
+    "tax_inclusive_amount":  125600.00,
+    "allowance_total_amount": 0.00,
+    "charge_total_amount":0.00,
+    "payable_amount":  125600.00
+  },
+  "invoice_lines": [
+    {
+      "unit_measure_id": 642,
+      "invoiced_quantity": 1.000000,
+      "line_extension_amount": 125600.00,
+      "free_of_charge_indicator": false,
+      "allowance_charges": [
+        {
+          "charge_indicator": false,
+          "allowance_charge_reason": "Discount",
+          "amount":  0.00,
+          "base_amount": 0.00
+        }
+      ],
+      "tax_totals": [
+        {
+          "tax_id": 15,
+          "percent":  0.00,
+          "tax_amount": 125600.00,
+          "taxable_amount": 0.00
+        },
+        {
+          "tax_id": 15,
+          "tax_amount":  0.00,
+          "unit_measure_id": 123,
+          "per_unit_amount": 125600.00,
+          "base_unit_measure": 0.00
+        }
+      ],
+      "description": "Envio de Caja",
+      "code": "1002004",
+      "type_item_identification_id": 3,
+      "price_amount": 125600.00,
+      "base_quantity": 1.000000
+    }
+  ]
+},
+"factura":{
+  "number": 987654321,
+  "type_document_id": 1,
+  "customer": {
+    "identification_number": 987654321,
+    "name": "Customer Test",
+    "email": "test@example.com"
+  },
+  "legal_monetary_totals": {
+    "line_extension_amount": "0.00",
+    "tax_exclusive_amount": "0.00",
+    "tax_inclusive_amount": "0.00",
+    "allowance_total_amount": "0.00",
+    "charge_total_amount": "0.00",
+    "payable_amount": "0.00"
+  },
+  "invoice_lines": [
+    {
+      "unit_measure_id": 642,
+      "invoiced_quantity": "1.000000",
+      "line_extension_amount": "0.00",
+      "free_of_charge_indicator": false,
+      "allowance_charges": [
+        {
+          "charge_indicator": false,
+          "allowance_charge_reason": "Discount",
+          "amount": "0.00",
+          "base_amount": "0.00"
+        }
+      ],
+      "tax_totals": [
+        {
+          "tax_id": 1,
+          "tax_amount": "0.00",
+          "taxable_amount": "0.00",
+          "percent": "19.00"
+        }
+      ],
+      "description": "XXXXXXXXXXX",
+      "code": "1234567890",
+      "type_item_identification_id": 3,
+      "price_amount": "0.00",
+      "base_quantity": "1.000000"
+    }
+  ]
+},
+  "credito": {
+
+  "billing_reference":
+   {
+    "number": "xxxxxxxxxxxx",
+    "uuid": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "issue_date": "2020-04-13"
+   },
+  "number": 1,
+  "type_document_id": 5,
+  "customer": {
+    "identification_number": 987654321,
+    "name": "xxxxxxxxxxxx",
+    "email": "xxxxxx@example.com"
+  },
+  "legal_monetary_totals": {
+    "line_extension_amount": 125600.00,
+    "tax_exclusive_amount": 125600.00,
+    "tax_inclusive_amount": 149464.00,
+    "allowance_total_amount": 0.00,
+    "charge_total_amount": 0.00,
+    "payable_amount": 149464.00
+  },
+  "credit_note_lines":
+   [ {
+      "unit_measure_id": 642,
+      "invoiced_quantity": 1.000000,
+      "line_extension_amount": 0.00,
+      "free_of_charge_indicator": false,
+      "allowance_charges": [
+        {
+          "charge_indicator": false,
+          "allowance_charge_reason": "Discount",
+          "amount": "0.00",
+          "base_amount": "0.00"
+        }
+      ],
+      "tax_totals": [
+        {
+          "tax_id": 1,
+          "tax_amount": 23864.00,
+          "taxable_amount": 125600.00,
+          "percent": 19.00
+        }
+      ],
+      "description": "Envio de Caja",
+      "code": 1002004,
+      "type_item_identification_id": 3,
+      "price_amount": 125600,
+      "base_quantity": 1.000000
+    }]
+
+},
+  "debito":
+          {
+  "billing_reference": {
+    "number": "TEST0000",
+    "uuid": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "issue_date": "0000-01-01"
+  },
+  "number": 0,
+  "type_document_id": 6,
+  "customer": {
+    "identification_number": 1234567890,
+    "name": "Customer Test",
+    "email": "test@test.com"
+  },
+  "requested_monetary_totals": {
+    "line_extension_amount": "0.00",
+    "tax_exclusive_amount": "0.00",
+    "tax_inclusive_amount": "0.00",
+    "allowance_total_amount": "0.00",
+    "charge_total_amount": "0.00",
+    "payable_amount": "0.00"
+  },
+  "debit_note_lines": [
+    {
+      "unit_measure_id": 642,
+      "invoiced_quantity": "1.000000",
+      "line_extension_amount": "0.00",
+      "free_of_charge_indicator": false,
+      "allowance_charges": [
+        {
+          "charge_indicator": false,
+          "allowance_charge_reason": "Discount",
+          "amount": "0.00",
+          "base_amount": "0.00"
+        }
+      ],
+      "tax_totals": [
+        {
+          "tax_id": 1,
+          "tax_amount": "0.00",
+          "taxable_amount": "0.00",
+          "percent": "19.00"
+        }
+      ],
+      "description": "XXXXXXXXXXX",
+      "code": "1234567890",
+      "type_item_identification_id": 3,
+      "price_amount": "0.00",
+      "base_quantity": "1.000000"
+    }
+  ]
+}
+}
